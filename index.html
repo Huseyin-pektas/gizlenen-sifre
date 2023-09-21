@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şifre Gizleme - Gösterme</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="input-box">
+        <input id="password" type="password" placeholder="Şifre giriniz...">
+        <img id="eyeIcon" src="images/eye-close.png">
+    </div>
+
+    <script>
+        let password = document.getElementById("password")
+        let eyeIcon = document.getElementById("eyeIcon")
+
+        eyeIcon.onclick = function() {
+            if(password.type == "password"){
+                password.type ="text";
+                eyeIcon.src = "images/eye-open.png"
+            }else{
+                password.type ="password";
+                eyeIcon.src = "images/eye-close.png"
+            }
+
+        }
+    </script>
+</body>
+
+</html>

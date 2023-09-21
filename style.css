@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background:#2e3d6d;
+}
+.input-box{
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    background: whitesmoke;
+    margin:300px auto;
+    padding: 10px  20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-box input{
+    border: 0;
+    flex: 1;
+    /* width: 100%; */
+    outline: 0;
+    background: whitesmoke;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0;
+    padding: 10px 0;
+    color: #121212;
+}
+.input-box img{
+    width: 35px;
+    cursor: pointer;
+}
